@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientService,Skill } from '../service/http-client.service'
+import { from } from 'rxjs';
+import { HttpClientService } from '../../service/http-client.service'
+import {Skill} from '../../model/Skill'
 
 @Component({
-  selector: 'app-skill',
-  templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.css']
+  selector: 'app-skill-list',
+  templateUrl: './skill-list.component.html',
+  styleUrls: ['./skill-list.component.css']
 })
-export class SkillComponent implements OnInit {
-
+export class SkillListComponent implements OnInit {
   skills: Skill[];
 
   constructor(
@@ -24,5 +25,4 @@ export class SkillComponent implements OnInit {
     this.skills = response;
     console.log(this.skills);
   }
-
 }

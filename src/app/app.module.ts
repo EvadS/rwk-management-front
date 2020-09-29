@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { SkillComponent } from './skill/skill.component';
+import { SkillListComponent } from './skills/skill-list/skill-list.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtTokenInterceptor } from './auth/interceptors/jwt.token.interceptor';
@@ -17,18 +17,20 @@ import { FooterComponent } from './layout/footer/footer.component'
 import { HeaderComponent } from './layout/header/header.component';
 import { AddSearchersComponent } from './add-searchers/add-searchers.component';
 import { AddSearcherDetailComponent } from './add-searcher-detail/add-searcher-detail.component';
+import { MessangersListComponent } from './messengers/messangers-list/messangers-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillComponent,
+    SkillListComponent,
     LoginComponent,
     HeaderComponent,
     FooterComponent,
     SearchersComponent,
     AddSearchersComponent,
     AddSearcherDetailComponent,
+    MessangersListComponent,
 
   ],
   imports: [

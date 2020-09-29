@@ -1,13 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-
-export class Skill {
-  constructor(
-    public id: string,
-    public name: string,
-  ) { }
-}
+import {Skill} from '../model/Skill'
 
 
 @Injectable({
@@ -21,6 +14,7 @@ export class HttpClientService {
   ) {
   }
 
+
   getSkills() {
 
    // const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa(username + ':' + password) });
@@ -29,5 +23,10 @@ export class HttpClientService {
 
     console.log("test call");
     return this.httpClient.get<Skill[]>('http://localhost:8000/skills/list');
+  }
+
+  getMessengerType(){
+    console.log('get all messsenges request');
+
   }
 }
