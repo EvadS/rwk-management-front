@@ -19,6 +19,7 @@ import { AddSearchersComponent } from './add-searchers/add-searchers.component';
 import { AddSearcherDetailComponent } from './add-searcher-detail/add-searcher-detail.component';
 import { MessangersListComponent } from './messengers/messangers-list/messangers-list.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MessangersListComponent } from './messengers/messangers-list/messangers
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [
     {
