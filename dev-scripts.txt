@@ -1,0 +1,13 @@
+- ng g s employee
+– ng g c create-employee
+– ng g c employee-details
+– ng g c employee-list
+-------------------------------
+
+
+- ng g s skill
+
+  ng g c create-skill
+  ng g c skill-details
+  ng g c skill-list
+
